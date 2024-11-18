@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Señor de los Anillos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3zk4fuGELz8FPj49AXVuvpviBbF0YS"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #111e28;
+
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+
+      .main-container {
+        background-color: #0d1117;
+        width: 500px;
+        padding: 20px;
+        margin: 30px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        overflow: auto;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header img {
+        width: 120px;
+      }
+
+      .image-container {
+        position: relative;
+      }
+
+      .image-container img {
+        width: 100%;
+      }
+
+      .buttons-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+      }
+
+      .buttons-container a {
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .buttons-container .blue {
+        background-color: #00a9e3;
+      }
+
+      .buttons-container .gray {
+        background-color: #555;
+      }
+
+      hr.header {
+        background-color: #00a9e3;
+        height: 3px;
+
+      }
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #444;
+        margin: 20px 0;
+      }
+
+      .section-title {
+        color: #00a9e3;
+        font-size: 24px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      .movie-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .movie-item img {
+        width: 100%;
+      }
+
+      .movie-item h3 {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer {
+        padding: 20px;
+        text-align: center;
+        color: #ccc;
+      }
+
+      footer .divider {
+        border: none;
+        height: 1px;
+        background-color: #444;
+        margin: 15px 0;
+      }
+
+      footer nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+
+      footer nav a {
+        text-decoration: none;
+        color: #ccc;
+        transition: color 0.3s;
+      }
+
+      footer nav a:hover {
+        color: white;
+      }
+
+      footer nav a::after {
+        content: "|";
+        margin-left: 15px;
+        color: #444;
+      }
+
+      .image-text-container {
+        position: relative;
+        margin: 20px auto;
+      }
+
+      .image-text-container img {
+        width: 100%;
+        display: block;
+      }
+
+      .floating-text-footer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #979797;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: right;
+        width: 200px;
+      }
+
+      .bienvenida {
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+  min-height: 150px; 
+}
+
+.social-icons img {
+  width: 10%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <header>
+          <img src="img/Amazon/logo.png" alt="Logo de Amazon Prime" />
+        </header>
+        <hr class="header" />
+
+        <div class="image-container">
+          <img src="img/Amazon/portada.jpg" alt="Portada" />
+        </div>
+
+        <div class="buttons-container">
+          <a href="#" class="blue">Ver ahora</a>
+          <a href="#" class="gray">Añadir a mi lista</a>
+        </div>
+
+        <div class="bienvenida">
+          <p>
+            Hola Leonardo Dicaprio: 
+            <p>Echa un ojo a nuestras mejores recomendaciones
+              y empieza tu próxima serie o película favorita. Puedes verlas en la
+              web o con la app de Prime Video en cualquier dispositivo compatible,
+              para que puedas llevarte el mejor entretenimiento allí donde vayas.
+              ¡Disfruta de Prime Video!</p>
+          </p>
+        </div>
+        
+
+        <hr />
+
+        <h1 class="section-title">Prime</h1>
+        <p style="margin-bottom: 20px; padding-left: 10px">
+          Películas que pensamos que te gustarán:
+        </p>
+
+        <div class="movie-gallery">
+          <div class="movie-item">
+            <img src="img/Amazon/film-1.jpg" alt="Película 1" />
+            <h3>La invasión</h3>
+          </div>
+          <div class="movie-item">
+            <img src="img/Amazon/film-2.jpg" alt="Película 2" />
+            <h3>Midnight Special</h3>
+          </div>
+          <div class="movie-item">
+            <img src="img/Amazon/film-3.jpg" alt="Película 3" />
+            <h3>Goodnight Mommy</h3>
+          </div>
+          <div class="movie-item">
+            <img src="img/Amazon/film-4.jpg" alt="Película 4" />
+            <h3>El apagón</h3>
+          </div>
+          <div class="movie-item">
+            <img src="img/Amazon/film-5.jpg" alt="Película 5" />
+            <h3>It, capítulo 2</h3>
+          </div>
+          <div class="movie-item">
+            <img src="img/Amazon/film-6.jpg" alt="Película 6" />
+            <h3>Uncle</h3>
+          </div>
+        </div>
+
+        <hr />
+
+        <footer>
+          <div class="image-text-container">
+            <img
+              src="img/Amazon/watch.jpg"
+              alt="Disfruta contenido en cualquier lugar"
+            />
+            <div class="floating-text-footer">
+              Disfruta en cualquier lugar y momento del mejor contenido
+            </div>
+          </div>
+          <hr class="divider" />
+          <nav>
+            <a href="#">Prime Video</a>
+            <a href="#">Series</a>
+            <a href="#">Películas</a>
+          </nav>
+          <hr class="divider" />
+
+          <h3>¡Síguenos!</h3>
+
+          <div class="social-icons">
+            <img src="img/Amazon/youtube.png" alt="" />
+
+            <img src="img/Amazon/facebook.png" alt="" />
+
+            <img src="img/Amazon/twiter.png" alt="" />
+          </div>
+          <p>
+            Prime Video proporciona actualizaciones puntuales por correo
+            electrónico sobre nuevas películas y series destacadas. Respetamos
+            tu tiempo y mantenemos nuestro compromiso de limitar nuestros
+            correos a noticias relevantes, así como al envío de información
+            importante sobre tu cuenta. Si no quieres recibir más comunicaciones
+            de este tipo de Amazon Prime Video, modifica la configuración de tu
+            cuenta aquí.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
