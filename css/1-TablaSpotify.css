@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Spotify Mix;
+  src: url(fonts/SpotifyMix-Light.ttf);
+}
+body {
+  background-color: #111313;
+  font-family: Spotify Mix;
+  margin: 0;
+}
+
+table {
+  height: 100vh;
+  width: 100vw;
+  background-color: #111313;
+  color: #b3b3b3;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+}
+
+.informacion {
+  background-color: #092424;
+}
+
+.album-content,
+.id,
+.informacion {
+  color: #ffffff;
+}
+.artist {
+  font-size: 80%;
+  color: #b3b3b3;
+}
+
+.album-info {
+  display: flex;
+  align-items: center;
+}
+
+.album-info img {
+  width: 50px;
+  margin-right: 15px;
+}
+.title {
+  padding-bottom: 7px;
+}
+
+.album-details {
+  display: flex;
+  flex-direction: column; /* indicar a flex la direccion la organización*/
+  justify-content: center;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #273030;
+}
